@@ -1,33 +1,43 @@
 {
   "expo": {
-    "name": "Glovo",
-    "slug": "Glovo",
+    "name": "Motalk",
+    "slug": "Motalk",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./app/assets/motalk.png", 
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor":  "#000000"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./app/assets/motalk.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "READ_CONTACTS",
+        "WRITE_CONTACTS",
+        "NOTIFICATIONS",
+        "CAMERA",
+        "CAMERA_ROLL",
+        "MEDIA_LIBRARY"
+      ]
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./app/assets/motalk.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font",
+      "react-native-video"
     ],
     "experiments": {
       "typedRoutes": true
